@@ -1,0 +1,83 @@
+ <div class="container-fluid" >
+  <div class="container" >
+    <div>
+
+      <div class="click">
+        <input type="text"
+          name="input" id=""
+          placeholder="Take a note.."
+          [formControl]= "title"
+          (click)="updatePlaceholder()"
+        >
+        <div class="icon-div-top">
+          <div *ngIf="!closable" class="icon-div-top" >
+            <mat-icon class="icon" >
+              check_box
+            </mat-icon>
+
+            <mat-icon class="icon" >
+              brush
+            </mat-icon>
+
+            <mat-icon class="icon" >
+              image
+            </mat-icon>
+          </div>
+
+          <mat-icon class="icon closable" *ngIf="closable" >
+            push_pin
+          </mat-icon>
+
+        </div>
+
+      </div>
+
+      <div class="closable" *ngIf="closable" >
+        <input
+          type="text"
+          placeholder="Take a note..."
+          [formControl]="content"
+        >
+
+        <div class="bottom-items">
+          <div class="icon-div">
+            <mat-icon class="icon" >
+              add_alert
+            </mat-icon>
+
+            <mat-icon class="icon" >
+                person_add
+            </mat-icon>
+
+            <mat-icon class="icon" >
+              palette
+            </mat-icon>
+
+            <mat-icon class="icon" >
+              image
+            </mat-icon>
+
+            <mat-icon class="icon" >
+              archive
+            </mat-icon>
+
+            <mat-icon class="icon" >
+              more_vert
+            </mat-icon>
+          </div>
+
+          <p class="close" role="button" (click)="close()">Close</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="grid">
+    <div *ngFor="let item of myItems" class="children">
+      <app-todo-items [item]="item"></app-todo-items>
+    </div>
+  </div>
+
+
+</div>

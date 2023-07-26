@@ -1,0 +1,44 @@
+<div class="container" >
+  <ul>
+    <li>
+      <a [routerLink]="['/']" [routerLinkActiveOptions]="{exact : true}" routerLinkActive="active">
+        <mat-icon class="icon" >
+            lightbulb
+        </mat-icon>
+        <p>Notes</p>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/notifications']">
+        <mat-icon class="icon" >
+          notifications
+        </mat-icon>
+        <p>Reminders</p>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/edit']">
+        <mat-icon class="icon" >
+          edit
+        </mat-icon>
+        <p>Edit labels</p>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/archive']">
+        <mat-icon class="icon" >
+          archive
+        </mat-icon>
+        <p>Archive</p>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/delete']">
+        <mat-icon class="icon" >
+          delete
+        </mat-icon>
+        <p>Trash</p>
+      </a>
+    </li>
+  </ul>
+</div>

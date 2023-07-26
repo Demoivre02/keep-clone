@@ -1,0 +1,45 @@
+<div class="container"
+  (mouseenter)="setOpen()"
+  (mouseleave)="unsetOpen()"
+  >
+  <div class="absolute" *ngIf="open">
+    <mat-icon >
+      check_circle
+    </mat-icon>
+  </div>
+  <div class="click">
+    <p class="title">{{item.title}}</p>
+    <mat-icon *ngIf="open" class="icon">
+      push_pin
+    </mat-icon>
+  </div>
+
+  <p class="content">{{item.content}}</p>
+
+  <div class="icon-div" *ngIf="open">
+    <mat-icon   class="icon " >
+      add_alert
+    </mat-icon>
+
+    <mat-icon   class="icon" >
+        person_add
+    </mat-icon>
+
+    <mat-icon  class="icon" >
+      palette
+    </mat-icon>
+
+    <mat-icon  class="icon" >
+      image
+    </mat-icon>
+
+    <mat-icon  class="icon" >
+      archive
+    </mat-icon>
+
+    <mat-icon  class="icon" >
+      more_vert
+    </mat-icon>
+  </div>
+
+</div>

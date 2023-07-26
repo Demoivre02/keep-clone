@@ -1,0 +1,51 @@
+.container{
+  width: 280px;
+}
+
+ul{
+  padding-left: 0;
+}
+
+li{
+  list-style-type: none;
+  text-align: left;
+}
+li > a{
+  display: flex;
+  justify-content: center ;
+  gap: 15px;
+  align-items: center;
+  text-decoration: none;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+
+li a:hover,.active{
+  background-color: #FEEFC3;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+li > a > p{
+  width: 150px;
+  text-align: left;
+  font-size: .85rem;
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.icon{
+  font-size: 22px;
+  height: 50px;
+  color: #5F6368;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  cursor: pointer;
+  position: relative;
+}
