@@ -1,0 +1,33 @@
+<app-toast *ngIf="loggedIn" message="Login Successful" ></app-toast>
+<div class="container" >
+  <form (submit)="onFormSubmit($event)"  class="login">
+    <h2>Welcome, User!</h2>
+    <p>Please log in</p>
+    <input
+       [formControl] = "email"
+       type="email"
+       placeholder="Enter email"
+       required
+    />
+    <input
+        type="password"
+        placeholder="Password"
+        [formControl] = "password"
+        required
+    />
+    <input
+        role="button"
+        type="submit"
+        value="Log In"
+        (click)="onClick()"
+    />
+    <button (click)="googleIn()" class="" >
+      <h5>Login with</h5>
+      <img src="assets/images/google.svg" alt="">
+    </button>
+    <div class="links">
+      <a [routerLink]="['/forgotPassword']">Forgot password</a>
+      <a [routerLink]="['/signup']">Register</a>
+    </div>
+  </form>
+</div>

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Todo } from '../todoarray';
+import { TodosService } from '../services/todos.service';
 
 @Component({
   selector: 'app-todo-items',
@@ -7,6 +8,8 @@ import { Todo } from '../todoarray';
   styleUrls: ['./todo-items.component.css']
 })
 export class TodoItemsComponent {
+
+  constructor (private service : TodosService){}
 
 open: boolean = false
 
@@ -17,7 +20,14 @@ open: boolean = false
     this.open= false
   }
 
+  delete(item : Todo){
+    this.service.deleteItem(item)
+    console.log(item);
+
+  }
+
   @Input() item : Todo = {
+    id: '',
     title: "",
     content: ""
   }

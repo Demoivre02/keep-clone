@@ -1,0 +1,27 @@
+.toast-container {
+  right: 0;
+  color: #000;
+  border-radius: 4px;
+  position: absolute;
+  margin: 3em;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity:1;
+  width: 300px;
+  background-color: #fff;
+  color: #1D1D1D;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.toast-container.show {
+  opacity: 1;
+}
+
+.toast-message {
+  font-size: 16px;
+}
+

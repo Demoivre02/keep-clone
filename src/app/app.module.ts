@@ -11,6 +11,14 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MainComponent } from './main/main.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { TodoItemsComponent } from './todo-items/todo-items.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {AngularFireModule} from '@angular/fire/compat'
+import { environment } from 'src/environments/environment';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
+import { VerificationComponent } from './auth/verification/verification.component';
+import { ToastComponent } from './toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +27,13 @@ import { TodoItemsComponent } from './todo-items/todo-items.component';
     SettingsComponent,
     SidenavComponent,
     MainComponent,
-    TodoItemsComponent
+    TodoItemsComponent,
+    LoginComponent,
+    RegisterComponent,
+    DashboardComponent,
+    ForgotPasswordComponent,
+    VerificationComponent,
+    ToastComponent
 
   ],
   imports: [
@@ -27,6 +41,7 @@ import { TodoItemsComponent } from './todo-items/todo-items.component';
     AppRoutingModule,
     ReactiveFormsModule,
     MatIconModule,
+    AngularFireModule.initializeApp(environment.firebase),
     RouterModule.forRoot([
 
     ]),

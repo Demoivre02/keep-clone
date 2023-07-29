@@ -1,0 +1,32 @@
+<div class="container" >
+  <form (submit)="onFormSubmit($event)"  class="login">
+    <h2>Welcome, User!</h2>
+    <p>Kindly signup</p>
+    <details>
+      <summary>Did you know?</summary>
+      <p>Short people have anger issues 😏</p>
+    </details>
+    <input
+        type="email"
+        placeholder="Enter email"
+        [formControl] = email
+        required
+    />
+    <input
+        type="password"
+        placeholder="Password"
+        [formControl] = "password"
+        required
+    />
+    <input
+      role="button"
+      type="submit"
+      value="Log In"
+      (click)="onClick()"
+      />
+    <button class="" >
+      <h5>Signup with</h5>
+      <img src="assets/images/google.svg" alt="">
+    </button>
+  </form>
+</div>

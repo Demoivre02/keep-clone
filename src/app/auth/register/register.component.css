@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+.container{
+  height: 100vh;
+  background-color: #FEEFC3;
+  display: grid;
+  place-items: center;
+}
+
+body {
+  background: #c0c0c0;
+  font-family: Raleway, sans-serif;
+  color: #666;
+}
+
+.login {
+  padding: 40px 50px;
+  width: 400px;
+  border-radius: 10px;
+  background: #fff;
+}
+  .login input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 14px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    font-family: Raleway, sans-serif;
+  }
+
+.login input[type=text],
+.login input[type=password] {
+  border: 1px solid #FBBC04;
+  transition: .2s;
+  outline: 0;
+  border-radius: 4ox;
+}
+
+.login input[type=text]:hover {
+  border-color: #FBBC04;
+  outline: none;
+  transition: all .2s ease-in-out;
+}
+
+.login input[type=submit] {
+  border: none;
+  background: #FBBC04;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.login input[type=submit]:hover {
+  background: #FBBC04;
+}
+
+  .login h2 {
+    margin: 20px 0 0;
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+.login p {
+  margin-bottom: 40px;
+  margin-top: 1em;
+  font-size: 20px
+}
+
+.links {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.links a {
+  display: table-cell;
+  padding-top: 10px;
+}
+
+.links a:first-child {
+  text-align: left;
+}
+
+.links a:last-child {
+  text-align: right;
+}
+
+  .login h2,
+  .login p,
+  .login a {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+  }
+
+.login a {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+h5{
+  padding: 0;
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+button{
+  padding-block: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
