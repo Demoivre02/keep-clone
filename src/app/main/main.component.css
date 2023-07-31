@@ -1,17 +1,19 @@
-.container{
+.container {
   background: #fff;
-  box-shadow: 1px 1px 10px 1px #A1A2A3;
+  box-shadow: 1px 1px 10px 1px #a1a2a3;
   border-radius: 8px;
   padding-inline: 15px;
   padding-block: 4px;
   width: 600px;
+  align-self: center;
+  overflow: hidden;
   margin-top: 2em;
-  margin-left: 500px;
 }
 
-.container-fluid{
-  align-self: center;
-  border: 100%;
+.container-fluid {
+  width: 72vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .click,.icon-div{
@@ -90,4 +92,43 @@ input{
   padding: 10px;
   width: 80%;
   margin-inline: auto;
+}
+
+@media (max-width: 700px){
+  .container{
+    width: 90%;
+    padding-inline: 0px;
+    align-self: flex-start;
+    align-self: auto;
+  }
+  .container-fluid{
+    width: 95vw;
+  }
+  .grid{
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  input{
+    width: 100%;
+    text-indent: 10px;
+  }
+  .children{
+    width: 100%;
+  }
+
+  .icon-div-top{
+    gap: 10px;
+    margin-right: 10px;
+  }
+  .icon-div{
+    gap: 10px;
+  }
+
+  .icon{
+    font-size: 15px;
+  }
+  .children{
+    margin-top: 1em;
+  }
+
+
 }

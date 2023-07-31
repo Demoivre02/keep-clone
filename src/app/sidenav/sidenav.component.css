@@ -49,3 +49,17 @@ li > a > p{
   cursor: pointer;
   position: relative;
 }
+
+@media (max-width: 700px){
+  .container{
+    width: 50px;
+  }
+
+  li > a > p{
+    display: none;
+  }
+
+  .icon{
+    font-size: 18px;
+  }
+}

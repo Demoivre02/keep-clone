@@ -96,3 +96,28 @@ p{
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 1000px) {
+  #input{
+    width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .search{
+    display: none;
+  }
+  .container{
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .justify-end{
+    margin-right: 0;
+  }
+  .icon{
+    font-size: 20px;
+  }
+  .disappear{
+    display: none;
+  }
+
+}
